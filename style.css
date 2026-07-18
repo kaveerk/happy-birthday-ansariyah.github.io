@@ -1,3 +1,10 @@
+:root {
+  color-scheme: light only;
+}
+
+html {
+  background: #fdf6f0;
+}
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap');
 
 * {
