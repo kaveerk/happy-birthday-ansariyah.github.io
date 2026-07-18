@@ -108,3 +108,21 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 observer.observe(loveSection);
+function spawnFloatie() {
+  const symbols = ['💗', '✨', '🤍', '💫'];
+  const el = document.createElement('div');
+  el.className = 'floatie';
+  el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+  el.style.left = Math.random() * 100 + 'vw';
+  el.style.fontSize = (Math.random() * 1.2 + 0.8) + 'rem';
+  el.style.setProperty('--drift', (Math.random() * 100 - 50) + 'px');
+  el.style.animationDuration = (Math.random() * 4 + 6) + 's';
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 10000);
+}
+
+setInterval(() => {
+  if (!site.classList.contains('hidden')) {
+    spawnFloatie();
+  }
+}, 800);
