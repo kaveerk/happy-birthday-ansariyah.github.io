@@ -2,11 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>For Her</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Site coming soon 💛</h1>
+
+  <!-- COVER SCREEN: tap to begin, this is what starts the music -->
+  <section id="cover">
+    <button id="startBtn">tap to open 💌</button>
+  </section>
+
+  <!-- MAIN SITE (hidden until she taps start) -->
+  <div id="site" class="hidden">
+
+    <!-- HERO: giant opening paragraph -->
+    <section id="hero">
+      <p id="heroText">
+        This is where your giant opening paragraph about her will go. Placeholder text for now.
+      </p>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section id="countdown">
+      <h2>The Countdown</h2>
+      <div id="countdownDisplay">
+        <div><span id="days">00</span><label>days</label></div>
+        <div><span id="hours">00</span><label>hours</label></div>
+        <div><span id="minutes">00</span><label>minutes</label></div>
+        <div><span id="seconds">00</span><label>seconds</label></div>
+      </div>
+    </section>
+
+    <!-- GIFTS -->
+    <section id="gifts">
+      <h2>Little Gifts</h2>
+      <div id="giftGrid">
+        <div class="gift" data-gift="1">🎁</div>
+        <div class="gift" data-gift="2">🎁</div>
+        <div class="gift" data-gift="3">🎁</div>
+        <div class="gift" data-gift="4">🎁</div>
+      </div>
+      <div id="giftReveal" class="hidden">
+        <p id="giftContent"></p>
+        <button id="closeGift">close</button>
+      </div>
+    </section>
+
+    <!-- I LOVE YOU COUNTER -->
+    <section id="loveCounter">
+      <h2>How much?</h2>
+      <div id="loveNumber">0</div>
+      <p id="loveSubtext"></p>
+    </section>
+
+    <!-- SONG PLAYER (floating control, always visible once site starts) -->
+    <div id="musicControl">
+      <button id="musicToggle">🎵</button>
+    </div>
+    <audio id="bgSong" src="assets/song.mp3" loop></audio>
+
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
