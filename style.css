@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: #fff5f7;
+  color: #3a2e35;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* COVER */
+#cover {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffe3ea;
+}
+
+#startBtn {
+  font-size: 1.5rem;
+  padding: 20px 40px;
+  border-radius: 50px;
+  border: none;
+  background: #ff8fa3;
+  color: white;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#hero p {
+  font-size: 1.8rem;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+#countdownDisplay {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+#countdownDisplay label {
+  display: block;
+  font-size: 0.9rem;
+}
+
+#giftGrid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gift {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gift:hover {
+  transform: scale(1.2);
+}
+
+#giftReveal {
+  margin-top: 30px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 500px;
+}
+
+#loveNumber {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ff8fa3;
+}
+
+#musicControl {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+#musicToggle {
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: #ff8fa3;
+  cursor: pointer;
+}
