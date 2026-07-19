@@ -216,8 +216,8 @@ section {
     transform: translateY(0);
   }
 }
-.word-search-text {
+#giftContent {
+  white-space: normal;
+  word-wrap: break-word;
   overflow-wrap: break-word;
-  word-break: break-all;
-  max-width: 100%;
 }
