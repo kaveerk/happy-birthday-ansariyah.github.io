@@ -216,3 +216,8 @@ section {
     transform: translateY(0);
   }
 }
+.word-search-text {
+  overflow-wrap: break-word;
+  word-break: break-all;
+  max-width: 100%;
+}
