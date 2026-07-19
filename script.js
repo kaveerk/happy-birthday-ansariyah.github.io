@@ -91,7 +91,7 @@ function animateLoveCounter() {
       requestAnimationFrame(tick);
     } else {
       loveNumberEl.textContent = target.toLocaleString();
-      loveSubtext.textContent = "...and one more for today. I love you 💋";
+      loveSubtext.textContent = "I love you's 💋";
     }
   }
 
