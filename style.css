@@ -263,3 +263,27 @@ html, body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+#spotifyWrapper {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(197,120,150,0.3);
+  z-index: 100;
+}
+
+#spotifyFrame {
+  border-radius: 16px;
+}
+
+@media (max-width: 500px) {
+  #spotifyWrapper {
+    right: 10px;
+    bottom: 80px;
+  }
+  #spotifyFrame {
+    width: 260px;
+    height: 80px;
+  }
+}
