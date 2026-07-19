@@ -4,18 +4,21 @@ const site = document.getElementById('site');
 const bgSong = document.getElementById('bgSong');
 const musicToggle = document.getElementById('musicToggle');
 
-const spotifyWrapper = document.getElementById('spotifyWrapper');
-
 startBtn.addEventListener('click', () => {
   cover.classList.add('hidden');
   site.classList.remove('hidden');
-  spotifyWrapper.classList.remove('hidden');
+  bgSong.play().catch(err => console.log('Song play blocked:', err));
 });
 
 musicToggle.addEventListener('click', () => {
-  spotifyWrapper.classList.toggle('hidden');
+  if (bgSong.paused) {
+    bgSong.play();
+    musicToggle.textContent = '🎵';
+  } else {
+    bgSong.pause();
+    musicToggle.textContent = '🔇';
+  }
 });
-
 const birthdayDate = new Date('2026-07-19T00:00:00');
 
 function updateCountdown() {
