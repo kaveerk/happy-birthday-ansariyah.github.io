@@ -221,3 +221,40 @@ section {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+@media (max-width: 500px) {
+  #hero p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  #countdownDisplay {
+    gap: 12px;
+    font-size: 1.4rem;
+  }
+
+  #countdownDisplay > div {
+    padding: 12px 14px;
+  }
+
+  #loveNumber {
+    font-size: 3.5rem;
+  }
+
+  .gift {
+    font-size: 2.5rem;
+  }
+
+  #giftReveal {
+    padding: 25px;
+    max-width: 90vw;
+  }
+
+  #startBtn {
+    font-size: 1.5rem;
+    padding: 14px 36px;
+  }
+}
